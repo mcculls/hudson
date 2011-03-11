@@ -34,6 +34,7 @@
   <modules>
     <module>maven-agent</module>
     <module>maven-interceptor</module>
+    <module>maven-embedder</module>
     <module>maven-plugin</module>
     <module>maven3-agent</module>
     <module>maven3-interceptor</module>
@@ -154,6 +155,12 @@
       <dependency>
         <groupId>org.jvnet.hudson.main</groupId>
         <artifactId>maven3-interceptor</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jvnet.hudson.main</groupId>
+        <artifactId>maven-embedder</artifactId>
         <version>${project.version}</version>
       </dependency>
 
